@@ -45,7 +45,7 @@ class Integration {
     const std::function<double(const std::vector<double>)>& integrand;
     const std::vector<std::pair<double, double>>& intervals;
     double sum;
-    const std::uniform_real_distribution<double>& dist;
+    std::uniform_real_distribution<double>& dist;
     std::mt19937 gen;
 
  public:
